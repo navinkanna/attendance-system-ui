@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
-import { getStudents, createStudent, updateStudent, deleteStudent } from '../api/studentApi'
-import StudentFormModal from '../components/StudentFormModal'
-import { EditIcon, DeleteIcon } from '../components/icons'
-import './RegisterClasses.css'
+import { getStudents, createStudent, updateStudent, deleteStudent } from '../../api/studentApi'
+import StudentFormModal from '../../components/StudentFormModal/StudentFormModal'
+import { EditIcon, DeleteIcon } from '../../components/icons'
 
 function RegisterStudents() {
   const [students, setStudents] = useState([])

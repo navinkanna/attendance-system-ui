@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react'
-import { getClasses } from '../api/classApi'
-import { getAttendanceDates, getAttendanceHistory } from '../api/attendanceApi'
-import '../components/ClassFormModal.css'
-import './RegisterClasses.css'
-import './RecordAttendance.css'
-import './AssignStudents.css'
+import { getClasses } from '../../api/classApi'
+import { getAttendanceDates, getAttendanceHistory } from '../../api/attendanceApi'
 
 function formatDate(isoDate) {
   return new Date(`${isoDate}T00:00:00`).toLocaleDateString(undefined, {
