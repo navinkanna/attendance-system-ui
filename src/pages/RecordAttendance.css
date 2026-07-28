@@ -1,0 +1,53 @@
+.class-picker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.class-picker label {
+  font-weight: 500;
+}
+
+.class-picker select {
+  padding: 0.5rem 0.625rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  min-width: 220px;
+}
+
+.attendance-date {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+.attendance-btn {
+  padding: 0.375rem 0.875rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  background: transparent;
+}
+
+.attendance-btn.present {
+  border: 2px solid #16a34a;
+  color: #16a34a;
+}
+
+.attendance-btn.present.filled {
+  background: #16a34a;
+  color: #fff;
+}
+
+.attendance-btn.absent {
+  border: 2px solid #dc2626;
+  color: #dc2626;
+}
+
+.attendance-btn.absent.filled {
+  background: #dc2626;
+  color: #fff;
+}

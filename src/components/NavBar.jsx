@@ -8,17 +8,22 @@ function NavBar() {
       <ul className="navbar-links">
         <li>
           <NavLink to="/register-classes" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Register Classes
+            Manage Class
           </NavLink>
         </li>
         <li>
           <NavLink to="/register-students" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Register Students
+            Manage Students
           </NavLink>
         </li>
         <li>
           <NavLink to="/record-attendance" className={({ isActive }) => (isActive ? 'active' : '')}>
             Record Attendance
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/view-history" className={({ isActive }) => (isActive ? 'active' : '')}>
+            View History
           </NavLink>
         </li>
       </ul>
