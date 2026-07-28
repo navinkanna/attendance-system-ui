@@ -48,7 +48,7 @@ function RegisterClasses() {
   }
 
   function handleAddStudents(cls) {
-    navigate(`/register-students?classId=${cls.id}`)
+    navigate(`/register-classes/${cls.id}/students`)
   }
 
   const sortedClasses = useMemo(
@@ -63,7 +63,7 @@ function RegisterClasses() {
   return (
     <section className="page">
       <div className="page-header">
-        <h1>Register Classes</h1>
+        <h1>Manage Class</h1>
         <button type="button" className="btn btn-primary" onClick={() => setModalMode('add')}>
           + Add Class
         </button>
@@ -78,13 +78,14 @@ function RegisterClasses() {
             <tr>
               <th>Class Name</th>
               <th>Section</th>
+              <th>Current Enrollment</th>
               <th className="actions-col">Actions</th>
             </tr>
           </thead>
           <tbody>
             {sortedClasses.length === 0 && (
               <tr>
-                <td colSpan={3} className="empty-row">
+                <td colSpan={4} className="empty-row">
                   No classes registered yet.
                 </td>
               </tr>
@@ -93,6 +94,7 @@ function RegisterClasses() {
               <tr key={cls.id}>
                 <td>{cls.classname}</td>
                 <td>{cls.section}</td>
+                <td>{cls.student_count}</td>
                 <td className="actions-col">
                   <button
                     type="button"

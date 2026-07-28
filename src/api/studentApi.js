@@ -1,4 +1,4 @@
-const BASE_URL = `${import.meta.env.VITE_API_BASE_URL.replace(/\/+$/, '')}/classes`
+const BASE_URL = `${import.meta.env.VITE_API_BASE_URL.replace(/\/+$/, '')}/students`
 
 async function handleResponse(response) {
   if (!response.ok) {
@@ -9,15 +9,11 @@ async function handleResponse(response) {
   return response.json()
 }
 
-export function getClasses() {
+export function getStudents() {
   return fetch(BASE_URL).then(handleResponse)
 }
 
-export function getClassById(id) {
-  return fetch(`${BASE_URL}/${id}`).then(handleResponse)
-}
-
-export function createClass(data) {
+export function createStudent(data) {
   return fetch(BASE_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -25,7 +21,7 @@ export function createClass(data) {
   }).then(handleResponse)
 }
 
-export function updateClass(id, data) {
+export function updateStudent(id, data) {
   return fetch(`${BASE_URL}/${id}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
@@ -33,6 +29,6 @@ export function updateClass(id, data) {
   }).then(handleResponse)
 }
 
-export function deleteClass(id) {
+export function deleteStudent(id) {
   return fetch(`${BASE_URL}/${id}`, { method: 'DELETE' }).then(handleResponse)
 }
