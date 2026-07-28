@@ -1,10 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { getClassById } from '../api/classApi'
-import { getStudents } from '../api/studentApi'
-import { getRegisteredStudents, replaceRegisteredStudents } from '../api/classRegistrationApi'
-import '../components/ClassFormModal.css'
-import './RegisterClasses.css'
+import { getClassById } from '../../api/classApi'
+import { getStudents } from '../../api/studentApi'
+import { getRegisteredStudents, replaceRegisteredStudents } from '../../api/classRegistrationApi'
 import './AssignStudents.css'
 
 function AssignStudents() {

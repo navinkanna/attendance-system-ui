@@ -1,11 +1,7 @@
 import { useEffect, useState } from 'react'
-import { getClasses } from '../api/classApi'
-import { getRegisteredStudents } from '../api/classRegistrationApi'
-import { getTodaysAttendance, saveTodaysAttendance } from '../api/attendanceApi'
-import '../components/ClassFormModal.css'
-import './RegisterClasses.css'
-import './AssignStudents.css'
-import './RecordAttendance.css'
+import { getClasses } from '../../api/classApi'
+import { getRegisteredStudents } from '../../api/classRegistrationApi'
+import { getTodaysAttendance, saveTodaysAttendance } from '../../api/attendanceApi'
 
 const today = new Date().toLocaleDateString(undefined, {
   weekday: 'long',

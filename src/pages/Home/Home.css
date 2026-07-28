@@ -1,0 +1,14 @@
+.hero-page {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero-page h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-page p {
+  font-size: 1.125rem;
+  color: #6b7280;
+}

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './ClassFormModal.css'
 
 function StudentFormModal({ initialData, onSubmit, onClose }) {
   const [firstName, setFirstName] = useState(initialData?.first_name ?? '')

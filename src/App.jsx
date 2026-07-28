@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
-import NavBar from './components/NavBar'
-import Home from './pages/Home'
-import RegisterClasses from './pages/RegisterClasses'
-import RegisterStudents from './pages/RegisterStudents'
-import AssignStudents from './pages/AssignStudents'
-import RecordAttendance from './pages/RecordAttendance'
-import ViewHistory from './pages/ViewHistory'
+import NavBar from './components/NavBar/NavBar'
+import Home from './pages/Home/Home'
+import RegisterClasses from './pages/RegisterClasses/RegisterClasses'
+import RegisterStudents from './pages/RegisterStudents/RegisterStudents'
+import AssignStudents from './pages/AssignStudents/AssignStudents'
+import RecordAttendance from './pages/RecordAttendance/RecordAttendance'
+import ViewHistory from './pages/ViewHistory/ViewHistory'
 import './App.css'
 
 function App() {

@@ -1,9 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { getClasses, createClass, updateClass, deleteClass } from '../api/classApi'
-import ClassFormModal from '../components/ClassFormModal'
-import { EditIcon, AddStudentsIcon, DeleteIcon } from '../components/icons'
-import './RegisterClasses.css'
+import { getClasses, createClass, updateClass, deleteClass } from '../../api/classApi'
+import ClassFormModal from '../../components/ClassFormModal/ClassFormModal'
+import { EditIcon, AddStudentsIcon, DeleteIcon } from '../../components/icons'
 
 function RegisterClasses() {
   const [classes, setClasses] = useState([])
